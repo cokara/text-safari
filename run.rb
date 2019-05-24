@@ -22,4 +22,3 @@ puts Hadithi.new(actions).call
 puts
 puts "~~~[ Kwaheri ]~~~"
 puts
-
