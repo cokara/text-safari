@@ -14,4 +14,12 @@ actions = [
   Move.new(2)
 ]
 
+puts
+puts
+puts "____ Hadithi!! Hadithi!! ____"
+puts
 puts Hadithi.new(actions).call
+puts
+puts "~~~[ Kwaheri ]~~~"
+puts
+

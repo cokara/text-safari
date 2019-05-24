@@ -67,10 +67,6 @@ class Hadithi
     %w[kisha halafu]
   end
 
-  #def subject_with_tense
-    #%[ali aka]
-  #end
-
   def translate_action(action)
     case action.to_s
     when 'turn'
