@@ -7,7 +7,11 @@ actions = [
   Turn.new(:right),
   Move.new(5),
   Turn.new(:left),
-  Move.new(1)
+  Move.new(1),
+  Turn.new(:left),
+  Move.new(7),
+  Turn.new(:right),
+  Move.new(2)
 ]
 
 puts Hadithi.new(actions).call
