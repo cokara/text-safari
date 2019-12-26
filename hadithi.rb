@@ -1,8 +1,9 @@
 class Hadithi
-  attr_reader :actions, :grouped_actions
+  attr_reader :actions, :grouped_actions, :name
 
-  def initialize(actions)
+  def initialize(actions, name: nil)
     @actions = actions
+    @name = name || 'X'
   end
 
   def call
@@ -14,7 +15,7 @@ class Hadithi
     hadithi = ""
     grouped_phrases.each_with_index do |phrases, j|
       if j == 0
-        sentence = 'X '
+        sentence = name.dup + ' '
       else
         sentence = "#{fillers.sample.capitalize} "
       end
@@ -24,8 +25,8 @@ class Hadithi
         else
           tense = 'aka'
         end
-        sentence << "#{tense}#{phrase} "
-        sentence << "#{fillers.sample} " unless i == phrases.count - 1
+        sentence << "#{tense}#{phrase}"
+        sentence << " #{fillers.sample} " unless i == phrases.count - 1
       end
       hadithi << sentence
       hadithi << ".\n"

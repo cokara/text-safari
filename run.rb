@@ -14,11 +14,12 @@ actions = [
   Move.new(2)
 ]
 
+name = ARGV[0]
 puts
 puts
 puts "____ Hadithi!! Hadithi!! ____"
 puts
-puts Hadithi.new(actions).call
+puts Hadithi.new(actions, name: name).call
 puts
 puts "~~~[ Kwaheri ]~~~"
 puts
